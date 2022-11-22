@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    /* Primary */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    
+    /* Neutral */
+    
+    --Very-dark-blue-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-Card: hsl(216, 50%, 16%);
+    --Very-dark-blue-Line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Outfit",sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: var(--Very-dark-blue-BG);
+}
+
+.card{
+    background-color: var(--Very-dark-blue-Card);
+    max-width: 350px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.image {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    line-height: 0;
+}
+
+.img-active {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(178, 100%, 50%, 60%);
+    opacity: 0;
+}
+
+.img-eye {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.img-equilibrium {
+    width: 100%;
+    height: 100%;
+}
+.product {
+    font-weight: 600;
+    color: var(--White);
+    font-size: 1.3rem;
+    margin: 15px 0;
+}
+
+.information {
+    font-weight: 300;
+    color: var(--Soft-blue);
+    line-height: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.value-time {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px  solid var(--Very-dark-blue-Line);
+}
+
+.value {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.img-ethereum {
+    width: 11px;
+    height: 18px;
+}
+
+.ethereum {
+    font-weight: 600;
+    margin-left: 5px;
+    color: var(--Cyan);
+}
+
+.time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.img-clock {
+    width: 17px;
+    height: 17px;
+}
+
+.time-left {
+    font-weight: 400;
+    margin-left: 5px;
+    color: var(--Soft-blue);
+}
+
+.creator {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 0 0 0;
+    align-items: center;
+}
+
+.user-avatar {
+    width: 36px;
+    border-radius: 18px;
+    border: 1px solid var(--White);
+}
+
+.copyright {
+    font-weight: 400;
+    margin-left: 15px;
+    font-size: 0.9rem;
+    color: var(--Soft-blue);
+}
+
+span {
+    color: var(--White);
+}
+
+/* ACTIVE STATES */
+.image:hover {
+    width: 100%;
+    cursor: pointer;
+}
+
+.product:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+span:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.img-active:hover {
+    opacity: 1;
+}
